@@ -46,5 +46,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           TAG_VAL=$(echo ${{ github.REF }} | awk -F'refs/tags/' '{print $2}')
-          gh release upload "${TAG_VAL}" dist/release-test-client-*.AppImage --repo JoKronk/release-test-client --clobber
+          gh release upload "${TAG_VAL}" dist/teamruns-client-*.AppImage --repo JoKronk/release-test-client --clobber
 
