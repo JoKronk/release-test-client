@@ -24,7 +24,7 @@ jobs:
 
   # Publish the Release
   publish_release:
-    if: github.repository == 'JoKronk/teamruns-client'
+    if: github.repository == 'JoKronk/release-test-client'
     needs:
       - build_windows
       - build_linux
@@ -34,4 +34,4 @@ jobs:
       - name: Publish Release
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
-        run: gh release edit ${GITHUB_REF_NAME} --draft=false --repo JoKronk/teamruns-client
+        run: gh release edit ${GITHUB_REF_NAME} --draft=false --repo JoKronk/release-test-client

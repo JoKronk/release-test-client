@@ -51,7 +51,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JoKronk/teamruns-client.git"
+    "url": "https://github.com/JoKronk/release-test-client.git"
   },
   "private": true,
   "dependencies": {

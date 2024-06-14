@@ -47,5 +47,5 @@ jobs:
       - name: Upload Release Binaries
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
-        run: gh release upload $env:GITHUB_REF_NAME dist/teamruns-client-${{env.VERSION_VAL}}-installer.exe dist/teamruns-client-${{env.VERSION_VAL}}-portable.exe --repo JoKronk/teamruns-client --clobber
+        run: gh release upload $env:GITHUB_REF_NAME dist/release-test-client-${{env.VERSION_VAL}}-installer.exe dist/release-test-client-${{env.VERSION_VAL}}-portable.exe --repo JoKronk/release-test-client --clobber
 
